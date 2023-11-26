@@ -25,12 +25,9 @@ article {
     padding: 10px;
 }
 
-.ImageC {
+.cadeau {
     width: auto;
     max-height: 300px;
 }
 
-#wishlist .ImageC {
-    max-height: 200px;
-}
 
