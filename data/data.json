@@ -3,13 +3,13 @@
     "titre": "Livre de Kundera",
     "lien": "https://www.amazon.fr/Linsoutenable-l%C3%A9g%C3%A8ret%C3%A9-l%C3%AAtre-Milan-Kundera/dp/207038165X",
     "image": "image/kundera.png",
-    "description": "Livre"
+    "description": ""
   },
   {
     "titre": "Livre: Pensée",
     "lien": "https://www.amazon.fr/raisons-possibles-tristesse-pens%C3%A9e-Espaces/dp/2226480412",
     "image": "image/pensee.png",
-    "description": "Livre intéressant"
+    "description": ""
   },
   {
     "titre": "Livre: Philosophie de solitude",
@@ -33,13 +33,13 @@
     "titre": "Livre: Éloge de la fuite",
     "lien": "https://www.amazon.fr/%C3%89loge-fuite-Henri-Laborit/dp/2070322831/",
     "image": "image/eloge.png",
-    "description": "Livre"
+    "description": ""
   },
   {
     "titre": "Livre: Defining Decade",
     "lien": "https://www.amazon.fr/Defining-Decade-Your-Twenties-Matter-/dp/0446561754",
     "image": "image/decade.png",
-    "description": "Livre intéressant"
+    "description": ""
   },
   {
     "titre": "Livre: Le paradoxe des choix",
@@ -51,30 +51,54 @@
     "titre": "Livre: Darwin",
     "lien": "https://www.amazon.fr/LOrigine-Esp%C3%A8ces-int%C3%A9gral-originale-CHARLES/dp/B0C91TP5X2/ref=sr_1_6",
     "image": "image/darwin.png",
-    "description": "Livre de Darwin le GOAT"
+    "description": "Livre du grand manitou"
   },
   {
     "titre": "Livre: Marketing",
     "lien": "https://www.amazon.fr/Cest-%C3%A7a-marketing-personnes-concern%C3%A9es/dp/2354563310",
     "image": "image/marketing.png",
-    "description": "Livre intéressant"
+    "description": ""
   },
   {
     "titre": "Livre: Models",
     "lien": "https://www.amazon.fr/Models-Attract-Women-Through-Honesty/dp/1463750358",
     "image": "image/models.png",
-    "description": "Livre encore"
+    "description": ""
   },
   {
     "titre": "Livre: Antifragile",
     "lien": "https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680",
     "image": "image/antifragile.png",
-    "description": "Livre"
+    "description": ""
   },
   {
     "titre": "Livre: La fabrique du crétin digital",
     "lien": "https://www.momox-shop.fr/la-fabrique-du-cretin-digital-les-dangers-des-ecrans-pour-nos-enfants-taschenbuch-M0202142331X.html",
     "image": "image/digital.png",
     "description": "Livre, ce n'est pas celui qui m'intéresse le plus"
+  },
+  {
+    "titre": "bague connecté",
+    "lien": "https://www.ultrahuman.com/ring/buy/us/",
+    "image": "image/bague.png",
+    "description": "pour la santé, je préfère la couleur 'matte grey' en francais c'est du gris mat"
+  },
+  {
+    "titre": "tour de coup",
+    "lien": "",
+    "image": "image/tourcoup.png",
+    "description": "pour les randonnées quand il fait froid c'est cool (pas de lien)"
+  },
+  {
+    "titre": "tour de coup",
+    "lien": "https://www.amazon.fr/Gritin-Rechargeable-Protection-Luminosit%C3%A9s-Couleurs/dp/B0CBPL4RKH/ref=sr_1_5?c=ts&s=lighting&sr=1-5&ts_id=3772301031",
+    "image": "image/lampe.png",
+    "description": "pour lire, c'est pas facile quand il fait noir, j'ai mis un lien au hasard je me suis pas renseigné, a toi de jouer père noël"
+  },
+  {
+    "titre": "bandana pour mimir",
+    "lien": "https://www.amazon.fr/dp/B075FN5ST7?ref_=cm_sw_r_cso_cp_apan_dp_8AFB55A0Y1KHHMNASD07",
+    "image": "image/bandana.png",
+    "description": "sachant qu'il fait jour même nuit c'est pas mal"
   }
 ]
