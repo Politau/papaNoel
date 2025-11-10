@@ -1,0 +1,80 @@
+[
+  {
+    "titre": "Livre de Kundera",
+    "lien": "https://www.amazon.fr/Linsoutenable-l%C3%A9g%C3%A8ret%C3%A9-l%C3%AAtre-Milan-Kundera/dp/207038165X",
+    "image": "image/kundera.png",
+    "description": "Livre"
+  },
+  {
+    "titre": "Livre: Pensée",
+    "lien": "https://www.amazon.fr/raisons-possibles-tristesse-pens%C3%A9e-Espaces/dp/2226480412",
+    "image": "image/pensee.png",
+    "description": "Livre intéressant"
+  },
+  {
+    "titre": "Livre: Philosophie de solitude",
+    "lien": "https://www.amazon.fr/philosophie-solitude-John-Cowper-Powys/dp/B088LD5H3S",
+    "image": "image/solitude.png",
+    "description": ""
+  },
+  {
+    "titre": "Livre: Pouvoir du moment présent",
+    "lien": "https://www.amazon.fr/pouvoir-moment-pr%C3%A9sent-d%C3%A9veil-spirituel/dp/2290020206",
+    "image": "image/pouvoirMomentPresent.png",
+    "description": ""
+  },
+  {
+    "titre": "Livre: Le mariage du ciel et de l'enfer",
+    "lien": "https://www.amazon.fr/Mariage-du-Ciel-lEnfer/dp/2844854125",
+    "image": "",
+    "description": ""
+  },
+  {
+    "titre": "Livre: Éloge de la fuite",
+    "lien": "https://www.amazon.fr/%C3%89loge-fuite-Henri-Laborit/dp/2070322831/",
+    "image": "image/eloge.png",
+    "description": "Livre"
+  },
+  {
+    "titre": "Livre: Defining Decade",
+    "lien": "https://www.amazon.fr/Defining-Decade-Your-Twenties-Matter-/dp/0446561754",
+    "image": "image/decade.png",
+    "description": "Livre intéressant"
+  },
+  {
+    "titre": "Livre: Le paradoxe des choix",
+    "lien": "https://www.abebooks.fr/servlet/BookDetailsPL?bi=31708753199",
+    "image": "image/choix.png",
+    "description": "Livre sur les choix"
+  },
+  {
+    "titre": "Livre: Darwin",
+    "lien": "https://www.amazon.fr/LOrigine-Esp%C3%A8ces-int%C3%A9gral-originale-CHARLES/dp/B0C91TP5X2/ref=sr_1_6",
+    "image": "image/darwin.png",
+    "description": "Livre de Darwin le GOAT"
+  },
+  {
+    "titre": "Livre: Marketing",
+    "lien": "https://www.amazon.fr/Cest-%C3%A7a-marketing-personnes-concern%C3%A9es/dp/2354563310",
+    "image": "image/marketing.png",
+    "description": "Livre intéressant"
+  },
+  {
+    "titre": "Livre: Models",
+    "lien": "https://www.amazon.fr/Models-Attract-Women-Through-Honesty/dp/1463750358",
+    "image": "image/models.png",
+    "description": "Livre encore"
+  },
+  {
+    "titre": "Livre: Antifragile",
+    "lien": "https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680",
+    "image": "image/antifragile.png",
+    "description": "Livre"
+  },
+  {
+    "titre": "Livre: La fabrique du crétin digital",
+    "lien": "https://www.momox-shop.fr/la-fabrique-du-cretin-digital-les-dangers-des-ecrans-pour-nos-enfants-taschenbuch-M0202142331X.html",
+    "image": "image/digital.png",
+    "description": "Livre, ce n'est pas celui qui m'intéresse le plus"
+  }
+]
