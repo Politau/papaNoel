@@ -115,3 +115,23 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
   });
 });
+
+
+
+const santa = document.getElementById('santa');
+let posX = -150;
+
+function animateSanta() {
+  posX += 2; // vitesse du traîneau
+  if (posX > window.innerWidth) posX = -150; // recommence à gauche
+  santa.style.left = posX + 'px';
+
+  // Effet de "vol" en arc
+  const amplitude = 30; // hauteur de l'arc
+  const frequency = 50; // longueur d'onde
+  santa.style.top = 50 + amplitude * Math.sin(posX / frequency) + 'px';
+
+  requestAnimationFrame(animateSanta);
+}
+
+animateSanta();

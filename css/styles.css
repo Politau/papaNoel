@@ -213,3 +213,13 @@ body.modal-open {
   from { transform: scale(0.7); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
+
+#santa {
+  position: fixed;   /* toujours visible à l'écran */
+  top: 50px;         /* hauteur initiale */
+  left: -150px;      /* commence hors écran à gauche */
+  width: 150px;      /* taille du traîneau */
+  z-index: 1000;     /* devant tout le reste */
+  pointer-events: none; /* ne gêne pas les clics sur le site */
+}
