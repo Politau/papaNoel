@@ -216,10 +216,11 @@ body.modal-open {
 
 
 #santa {
-  position: fixed;   /* toujours visible à l'écran */
-  top: 50px;         /* hauteur initiale */
-  left: -150px;      /* commence hors écran à gauche */
-  width: 150px;      /* taille du traîneau */
-  z-index: 1000;     /* devant tout le reste */
-  pointer-events: none; /* ne gêne pas les clics sur le site */
+  position: fixed;
+  top: 50px;
+  left: -150px;
+  width: 150px;
+  z-index: 1000;
+  pointer-events: none;
+  transform: scaleX(-1);
 }

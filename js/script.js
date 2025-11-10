@@ -122,13 +122,13 @@ const santa = document.getElementById('santa');
 let posX = -150;
 
 function animateSanta() {
-  posX += 2; // vitesse du traîneau
-  if (posX > window.innerWidth) posX = -150; // recommence à gauche
+  posX += 1.5;
+  if (posX > window.innerWidth) posX = -150;
   santa.style.left = posX + 'px';
 
-  // Effet de "vol" en arc
-  const amplitude = 30; // hauteur de l'arc
-  const frequency = 50; // longueur d'onde
+  
+  const amplitude = 30; 
+  const frequency = 50; 
   santa.style.top = 50 + amplitude * Math.sin(posX / frequency) + 'px';
 
   requestAnimationFrame(animateSanta);
