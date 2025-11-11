@@ -307,6 +307,45 @@ body.modal-open {
   background-color: #c71c30;
 }
 
+.reserveBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  background-color: #d62828;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.reserveBtn:hover {
+  background-color: #a4161a;
+  transform: scale(1.05);
+}
+
+.pageclip-form__submit {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 30px;
+  font-size: 1em;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.pageclip-form__submit:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+
+
 
 article.reserved {
   opacity: 0.7;

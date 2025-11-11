@@ -124,6 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modal.classList.remove('hidden');
     document.body.classList.add('modal-open');
+    const reserveBtn = modal.querySelector(".reserveBtn");
+if (reserveBtn) {
+  reserveBtn.onclick = () => {
+    const title = article.querySelector("h2").innerText;
+    reserveTitle.innerText = `Réserver : ${title}`;
+    reserveArticle.value = title;
+    reserveModal.classList.remove("hidden");
+  };
+}
   }
 
   function closeModal() {
