@@ -4,6 +4,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('modal');
   const modalInner = document.getElementById('modal-inner');
   const closeBtn = document.getElementById('closeBtn');
+  
+  
+  const reserveModal = document.getElementById("reserveModal");
+  const closeReserveBtn = document.getElementById("closeReserveBtn");
+  const reserveTitle = document.getElementById("reserveTitle");
+  const reserveArticle = document.getElementById("reserveArticle");
+
+  // Gère les boutons "Réserver"
+  document.querySelectorAll(".reserveBtn").forEach(btn => {
+    btn.addEventListener("click", e => {
+      const article = e.target.closest("article");
+      const title = article.querySelector("h2").innerText;
+      reserveTitle.innerText = `Réserver : ${title}`;
+      reserveArticle.value = title;
+
+      reserveModal.classList.remove("hidden");
+    });
+  });
+
+  // Fermer la modale
+  closeReserveBtn.addEventListener("click", () => {
+    reserveModal.classList.add("hidden");
+  });
+
+
 
   // --- Charger les cadeaux depuis JSON ---
   fetch('data/data.json')
@@ -135,3 +160,29 @@ function animateSanta() {
 }
 
 animateSanta();
+
+
+// --- Animation de neige ---
+const snowContainer = document.getElementById('snow-container');
+
+function createSnowflake() {
+  const snowflake = document.createElement('span');
+  snowflake.classList.add('snowflake');
+  snowflake.textContent = '❄'; // caractère du flocon
+
+  // Position et style aléatoires
+  snowflake.style.left = Math.random() * 100 + 'vw';
+  snowflake.style.fontSize = Math.random() * 10 + 10 + 'px';
+  snowflake.style.animationDuration = 5 + Math.random() * 5 + 's'; // vitesse de chute
+  snowflake.style.opacity = Math.random();
+
+  snowContainer.appendChild(snowflake);
+
+  // Supprimer le flocon après l'animation
+  setTimeout(() => snowflake.remove(), 10000);
+}
+
+// Crée un flocon toutes les 200 ms
+setInterval(createSnowflake, 200);
+
+

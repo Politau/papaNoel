@@ -224,3 +224,85 @@ body.modal-open {
   pointer-events: none;
   transform: scaleX(-1);
 }
+
+
+/* --- Flocons de neige --- */
+#snow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* ne bloque pas les clics */
+  overflow: hidden;
+  z-index: 10; /* derrière le Père Noël mais au-dessus du fond */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  color: white;
+  font-size: 1em;
+  opacity: 0.9;
+  user-select: none;
+  animation: fall linear infinite;
+}
+
+/* Animation de chute */
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+
+
+#reserveModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+#reserveModal.hidden {
+  display: none;
+}
+
+#reserveModal .modal-content {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+#reserveModal input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#reserveModal button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reserveModal button:hover {
+  background-color: #c71c30;
+}
