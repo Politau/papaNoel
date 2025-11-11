@@ -5,10 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalInner = document.getElementById('modal-inner');
   const closeBtn = document.getElementById('closeBtn');
 
-  // Fermer la modale de réservation
-  closeReserveBtn.addEventListener("click", () => {
-    reserveModal.classList.add("hidden");
-  });
 
   // --- Charger les cadeaux depuis JSON ---
   fetch('data/data.json')
