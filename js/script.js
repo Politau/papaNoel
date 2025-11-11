@@ -139,8 +139,56 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
   });
+
 });
 
+document.addEventListener("DOMContentLoaded", async () => {
+  const API_KEY = "api_QNu03a1VRm0hmllRilj2HkXI3psXINOr";
+  const FORM_ID = "3TKlcidHGYa873xBb24LoPMTon9UH5qh";
+
+  try {
+    const response = await fetch(`https://api.pageclip.co/forms/${FORM_ID}/submissions`, {
+      headers: {
+        Authorization: `Basic ${btoa(API_KEY + ":")}`
+      }
+    });
+
+    if (!response.ok) throw new Error("Erreur API Pageclip");
+
+    const data = await response.json();
+
+    data.submissions.forEach(sub => {
+      const articleName = sub.data.article;
+      const nom = sub.data.nom;
+
+      // Trouve l'article correspondant au titre
+      document.querySelectorAll("article").forEach(article => {
+        const titre = article.querySelector("h2").innerText.trim();
+        if (titre === articleName) {
+          // Ajoute une mention "Réservé par ..."
+          const reserved = document.createElement("p");
+          reserved.textContent = `🎁 Réservé par ${nom}`;
+          reserved.style.color = "#2a9d8f";
+          reserved.style.fontWeight = "bold";
+          article.classList.add("reserved");
+          article.appendChild(reserved);
+
+          // Optionnel : griser ou désactiver le bouton de réservation
+          const btn = article.querySelector(".reserveBtn");
+          if (btn) {
+            btn.disabled = true;
+            btn.textContent = "Déjà réservé 🎁";
+            btn.style.backgroundColor = "#aaa";
+            btn.style.cursor = "not-allowed";
+          }
+        }
+      });
+    });
+
+  } catch (err) {
+    console.error("Erreur de récupération des réservations :", err);
+  }
+});
 
 
 const santa = document.getElementById('santa');

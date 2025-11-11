@@ -306,3 +306,22 @@ body.modal-open {
 #reserveModal button:hover {
   background-color: #c71c30;
 }
+
+
+article.reserved {
+  opacity: 0.7;
+  filter: grayscale(60%);
+  position: relative;
+}
+
+article.reserved::after {
+  content: "🎁 Réservé";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #2a9d8f;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
