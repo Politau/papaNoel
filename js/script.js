@@ -5,13 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalInner = document.getElementById('modal-inner');
   const closeBtn = document.getElementById('closeBtn');
 
-  const reserveModal = document.getElementById("reserveModal");
-  const closeReserveBtn = document.getElementById("closeReserveBtn");
-  const reserveTitle = document.getElementById("reserveTitle");
-  const reserveArticle = document.getElementById("reserveArticle");
-
-  let currentArticle = null; // pour garder la référence de l'article sélectionné
-
   // Fermer la modale de réservation
   closeReserveBtn.addEventListener("click", () => {
     reserveModal.classList.add("hidden");
@@ -32,12 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
             ${item.image ? `<img src="${item.image}" alt="${item.titre}" class="cadeau">` : ''}
           </a>
           ${item.description ? `<p>${item.description}</p>` : ''}
-          <button class="reserveBtn">🎅 Réserver</button>
         `;
         wishlist.appendChild(article);
       });
 
-      // --- Initialiser la modale et les boutons de réservation ---
+      // --- Initialiser la modale ---
       initModalEvents();
     })
     .catch(err => console.error('Erreur chargement JSON:', err));
@@ -47,19 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const articles = document.querySelectorAll('.zoomable');
 
     articles.forEach(article => {
-      const reserveBtn = article.querySelector(".reserveBtn");
-
-      // Bouton Réserver dans l'article
-      if (reserveBtn) {
-        reserveBtn.addEventListener("click", e => {
-          e.stopPropagation(); // éviter d'ouvrir la modale principale
-          currentArticle = article;
-          reserveTitle.innerText = `Réserver : ${currentArticle.querySelector("h2").innerText}`;
-          reserveArticle.value = currentArticle.querySelector("h2").innerText;
-          reserveModal.classList.remove("hidden");
-        });
-      }
-
       // Clic sur l'article pour ouvrir la modale principale
       article.addEventListener('click', e => {
         e.preventDefault();
@@ -176,49 +155,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   setInterval(createSnowflake, 200);
-
-  // --- Récupération des réservations Pageclip ---
-  (async () => {
-    const API_KEY = "api_QNu03a1VRm0hmllRilj2HkXI3psXINOr";
-    const FORM_ID = "3TKlcidHGYa873xBb24LoPMTon9UH5qh";
-
-    try {
-      const response = await fetch(`https://api.pageclip.co/forms/${FORM_ID}/submissions`, {
-        headers: { Authorization: `Basic ${btoa(API_KEY + ":")}` }
-      });
-
-      if (!response.ok) throw new Error("Erreur API Pageclip");
-
-      const data = await response.json();
-
-      data.submissions.forEach(sub => {
-        const articleName = sub.data.article;
-        const nom = sub.data.nom;
-
-        document.querySelectorAll("article").forEach(article => {
-          const titre = article.querySelector("h2").innerText.trim();
-          if (titre === articleName) {
-            const reserved = document.createElement("p");
-            reserved.textContent = `🎁 Réservé par ${nom}`;
-            reserved.style.color = "#2a9d8f";
-            reserved.style.fontWeight = "bold";
-            article.classList.add("reserved");
-            article.appendChild(reserved);
-
-            const btn = article.querySelector(".reserveBtn");
-            if (btn) {
-              btn.disabled = true;
-              btn.textContent = "Déjà réservé 🎁";
-              btn.style.backgroundColor = "#aaa";
-              btn.style.cursor = "not-allowed";
-            }
-          }
-        });
-      });
-
-    } catch (err) {
-      console.error("Erreur de récupération des réservations :", err);
-    }
-  })();
 
 });
