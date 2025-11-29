@@ -1,17 +1,5 @@
 [
   {
-    "titre": "bague connecté",
-    "lien": "https://www.ultrahuman.com/ring/buy/us/",
-    "image": "image/bague.png",
-    "description": "pour la santé, je préfère la couleur 'matte grey' en francais c'est du gris mat"
-  },
-  {
-    "titre": "lampe lecture",
-    "lien": "https://www.amazon.fr/Gritin-Rechargeable-Protection-Luminosit%C3%A9s-Couleurs/dp/B0CBPL4RKH/ref=sr_1_5?c=ts&s=lighting&sr=1-5&ts_id=3772301031",
-    "image": "image/lampe.jpg",
-    "description": "pour lire, c'est pas facile quand il fait noir, j'ai mis un lien au hasard je me suis pas renseigné, a toi de jouer père noël"
-  },
-  {
     "titre": "bandana pour mimir",
     "lien": "https://www.amazon.fr/dp/B075FN5ST7?ref_=cm_sw_r_cso_cp_apan_dp_8AFB55A0Y1KHHMNASD07",
     "image": "image/bandana.png",
